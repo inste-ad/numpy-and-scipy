@@ -42,7 +42,7 @@ arr = np.array(alist)
 arr[0,1]
 arr[1,:]
 #%%[markdown]
-### 用多维array去索引数组
+### 用多维array去索引数组 相关知识总结在OneNote上。
 #%%
 a = np.array([[1,2], [3, 4], [5, 6]])
 
@@ -54,7 +54,9 @@ print(a[[0, 1, 2], [0, 1, 0]])  # Prints "[1 4 5]"
 print(np.array([a[0, 0], a[1, 1], a[2, 0]]))  # Prints "[1 4 5]"
 #%%[markdown]
 ### 布尔式索引
-
+# 可以使用 ```
+#  x[y>2]```这样来引用数组，y>2 返回的是一个布尔变量数组
+# x[y>2] 只会引用布尔变量为true的数组元素。
 #%%
 a = np.array([[1,2], [3, 4], [5, 6]])
 bool_idx = (a > 2) 
